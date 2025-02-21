@@ -1,8 +1,7 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { FaCartShopping } from "react-icons/fa6";
-
+import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   const cart = useSelector((state) => state.cart.items);
 
@@ -34,7 +33,7 @@ const Header = () => {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/addToCart" className="position-relative">
               <Button variant="outline-success">
-                <FaCartShopping size={25} />
+                <FaShoppingCart size={25} />
                 {cart.length > 0 && (
                   <span className="cart-badge">{cart.length}</span>
                 )}
