@@ -29,9 +29,17 @@ const ProductPage = () => {
 
   return (
     <>
-      <div className="d-flex flex-wrap justify-content-center">
+      <div id="productPage" className="d-flex flex-wrap justify-content-center">
         {mydata.map((product) => (
-          <Card style={{ width: "18rem", margin: "1rem" }} key={product.id}>
+          <Card
+            id="cards"
+            style={{
+              width: "18rem",
+              margin: "1rem",
+              background: "transparent",
+            }}
+            key={product.id}
+          >
             <Card.Img
               variant="top"
               src={product.image}
@@ -44,6 +52,7 @@ const ProductPage = () => {
                 <strong>Price:</strong> ₹{product.price}
               </Card.Text>
               <Button
+                id="btn"
                 variant="success"
                 onClick={() => dispatch(addToCart(product))}
               >

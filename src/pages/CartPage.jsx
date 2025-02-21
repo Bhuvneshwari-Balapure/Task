@@ -16,7 +16,7 @@ const CartPage = () => {
   );
 
   return (
-    <div className="container my-3 cartPage">
+    <div id="productPage" className="container my-3 cartPage">
       <h3 className="text-center">Cart Items</h3>
       <Table responsive bordered hover className="mt-3">
         <thead className="thead-dark">

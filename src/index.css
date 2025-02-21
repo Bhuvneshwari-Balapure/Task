@@ -3,6 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+#bg {
+  background: linear-gradient(to right, #8ff18f, #c2f39d);
+  padding: 10px 0;
+}
+#productPage {
+  background: linear-gradient(to right, #e2fae2, #dbfac3);
+}
+#cards {
+  border: none;
+  box-shadow: 20px 14px 10px rgba(4, 97, 17, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+}
+#btn:hover {
+  background: linear-gradient(to left, #469d46, #52b506);
+}
 .brand {
   color: green !important;
 }

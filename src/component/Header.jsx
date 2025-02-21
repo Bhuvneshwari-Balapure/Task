@@ -6,7 +6,7 @@ const Header = () => {
   const cart = useSelector((state) => state.cart.items);
 
   return (
-    <Navbar expand="lg" bg="light" className="shadow-sm">
+    <Navbar expand="lg" id="bg" className="shadow-sm">
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold fs-4 brand">
           Shopping-Cart

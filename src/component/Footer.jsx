@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-light text-center text-white">
+    <footer id="bg" className="bg-light text-center text-white">
       <div className="p-4 pb-0">
         <section className="mb-4">
           <a
